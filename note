@@ -1,0 +1,8 @@
+Using templates in FastAPI
+- Templates allow us to serve up HTML pages to our users while still maintaining our json endpoints for the the backend api.
+- So in this case we will setup Jinja2 templates, pass data to templates, use Jinja2 syntax for foor loops and conditionals, implement
+template inheritence with a layout.html. Add bootstrap for styling and setup static files for our css and images
+
+Template inheritence
+Gives the capability to create a parent template with the common structure nd then the child templates just fill in the parts that are different 
+in this case we will be using the layout.html file as our parent template file
