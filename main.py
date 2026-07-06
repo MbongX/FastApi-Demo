@@ -39,8 +39,8 @@ posts: list[dict] = [
     #returning an HTML String
  #   return f"<h1>{posts[0]['title']}</h1>"
 
-@app.get("/", include_in_schema=False)
-@app.get("/posts", include_in_schema=False)
+@app.get("/", include_in_schema=False, name="home")
+@app.get("/posts", include_in_schema=False, name="posts")
 def home(request: Request): #we need to add a request paramater as an arguments as this is require by Jinja2
     # we will be return a template via the following 'template.TemplateResponse(request, home.html)'
     # we can also pass in a context dictionary into our templates | variable to render/use within the template in this case we will be using out List Dictionary
